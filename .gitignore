@@ -205,3 +205,12 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+### Images ###
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi

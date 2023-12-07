@@ -1,0 +1,6 @@
+Tener instalado node.js
+npm install -g @angular/cli
+Instalar dependencia:  editorconfig, Angular Language Service,
+
+nodeenv my-env
+source my-env/bin/activate
