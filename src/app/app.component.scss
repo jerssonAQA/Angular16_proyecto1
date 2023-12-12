@@ -4,3 +4,46 @@
   overflow: auto;
   background: red;
 }
+
+
+.products--grid{
+  // display: grid;
+  // grid-template-columns: repeat(5,1fr);
+  // grid-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  div{
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    h2,p{
+      mangin:0;
+    }
+  }
+}
+
+@media screen and (min-width:40em){
+  .products--grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+  }
+}
+
+@media screen and (min-width:80em){
+  .products--grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 15px;
+  }
+}
+
+.message-error{
+  background-color: red;
+  color: white;
+  opacity: 0;
+  &.invalido{
+    opacity: 1;
+  }
+}
