@@ -1,3 +1,48 @@
+<h1>ngSwitch</h1>
+<input type="text" required [(ngModel)]="person.name">
+<div [ngSwitch]="person.name">
+  <p *ngSwitchCase="'jersson'">
+    La persona es Jersson Quintero
+  </p>
+  <p *ngSwitchCase="'Aleja'">
+    La persona es Alejandro Martinez
+  </p>
+  <p *ngSwitchCase="'jorge'">
+    La persona es Jorge Baron
+  </p>
+  <p *ngSwitchCase="'Cobos'">
+    La persona es Jorge martinez
+  </p> <p *ngSwitchDefault> No hace macth</p>
+</div>
+
+<!-- <p *ngIf="person.name==='jersson'">
+  La persona es Jersson Quintero
+</p>
+<p *ngIf="person.name==='Aleja'">
+  La persona es Alejandro Martinez
+</p>
+<p *ngIf="person.name==='jorge'">
+  La persona es Jorge Baron
+</p>
+<p *ngIf="person.name==='Cobos'">
+  La persona es Jorge martinez
+</p> -->
+
+<!-- <div [ngSwitch]="color">
+  <p *ngSwitchCase="'azul'">
+      El color el Azul
+  </p>
+  <p *ngSwitchCase="'verde'">
+      El color el Verde
+  </p>
+  <p *ngSwitchCase="'rojo'">
+      El color el Rojo
+  </p>
+  <p *ngSwitchDefault>
+      No hay ningún color
+  </p>
+</div> -->
+
 <h1>*ngFor Objs</h1>
 <div>
   <div *ngFor="let product of products">
