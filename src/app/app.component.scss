@@ -23,6 +23,20 @@
   }
 }
 
+.message-error{
+  background-color: red;
+  color: white;
+  opacity: 0;
+  transition: all linear .5s;
+  &.invalido{
+    opacity: 1;
+  }
+}
+.styles{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
 @media screen and (min-width:40em){
   .products--grid{
     display: grid;
@@ -39,11 +53,4 @@
   }
 }
 
-.message-error{
-  background-color: red;
-  color: white;
-  opacity: 0;
-  &.invalido{
-    opacity: 1;
-  }
-}
+

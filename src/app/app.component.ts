@@ -7,6 +7,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  widthImg = 10;
   title = 'my-api1';
   name = 'Jersson';
   age = 20;
