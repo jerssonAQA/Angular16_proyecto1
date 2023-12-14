@@ -13,6 +13,11 @@ export class AppComponent {
   age = 20;
   img = "https://source.unsplash.com/random";
   btnDisabled= true
+  register={
+    name:'',
+    email:'',
+    password:''
+  }
   person ={
     name:'Jersson',
     age: 25,
