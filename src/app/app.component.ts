@@ -19,7 +19,12 @@ export class AppComponent {
     avatar:"https://source.unsplash.com/random"
   }
   names: string[] =['Nico','Juli','Santi']
-  newName=''
+  newName='';
+  box={
+    height: 200,
+    width: 200,
+    background: 'red'
+  }
   products:Product[] = [
     {
       name: 'EL mejor juguete',
