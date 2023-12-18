@@ -1,7 +1,7 @@
 .box{
   height: 200px;
   width: 200px;
-  //overflow: auto;
+  overflow: auto;
   background: red;
 }
 
@@ -63,4 +63,68 @@
   }
 }
 
+// zdvsdv
 
+.form-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: grid; //una sola columna
+  place-content: center;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  & h1 {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  & label {
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  & input {
+    border: none;
+    outline: none;
+    height: 24px;
+    border-radius: 10px;
+    padding: 4px 8px;
+    background-color: whitesmoke;
+    caret-color: green;
+    color: rgb(98, 97, 97);
+  }
+}
+
+.msj-error {
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+  transition: all linear .5s;
+  &.valido {
+    opacity: 0;
+  }
+  &.invalido {
+    opacity: 1;
+  }
+}
+
+button[type="submit"] {
+  background-color: rgb(82, 214, 133);
+  padding: 16px 24px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &.invalid {
+    background-color: rgb(170, 208, 185);
+  }
+}

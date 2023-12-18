@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from './product.model';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -90,6 +91,9 @@ export class AppComponent {
   }
   deleteName(index: number){
     this.names.splice(index, 1);
+  }
+  onRegister(){
+    console.log(this.register);
   }
 
 }
